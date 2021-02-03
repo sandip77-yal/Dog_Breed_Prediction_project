@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dog Breed Prediction</title>
+</head>
+<body>
+	<center>
+
+	<h3>Upload Your Image </h3>
+		<form action="/imageprocess" method="POST" accept-charset="utf-8", enctype="multipart/form-data">
+			{% csrf_token %}
+			<!-- input file -->
+			<input type="file" id="image" name="image"/>
+			<input  type="submit" name="submit" value="Submit"/>
+	</form>
+	</center>
+</body>
+</html>
